@@ -1,24 +1,24 @@
 /* basic style */
-body {
+.todo-app {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.main {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.main img {
+.header__image{
   width: 100%;
 }
-.main .more-inf {
+.header__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.main { text-align: center;
+.header { text-align: center;
 }
 }
 .wrapper {
@@ -34,17 +34,17 @@ body {
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.task-list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.task-list__item, .task-list__header {
   list-style:none;
 }
-input,button{
+input,.btn{
   outline:none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -53,11 +53,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* heading */
-h3,
+.task-list__header,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;

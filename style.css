@@ -160,7 +160,7 @@
 
 /* completed */
 
-.complete-task__label {
+.complete-task .task-list__label {
   text-decoration: line-through;
   color: #888;
 }

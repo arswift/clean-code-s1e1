@@ -8,20 +8,23 @@
 </head>
 
 <body class="todo-app">
-  <div class="header">
+  <header class="header">
     <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix" class="header__image">
     <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="wrapper">
-    <p id="tasks">
-      <label class="label" for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task input" type="text">
-        <button class="btn">Add</button>
-      </div>
-    </p>
-    <h3 class="task-list__header">Todo</h3>
-    <ul id="incomplete-tasks" class="task-list">
+  </header>
+  <main class="wrapper">
+    <section class="add-task">
+      <p id="tasks">
+        <label class="label" for="new-task">Add Item</label>
+        <div class="task-row-wrapper">
+          <input id="new-task" class="task input" type="text">
+          <button class="btn">Add</button>
+        </div>
+      </p>
+    </section>
+    <section class="todo-task">
+      <h3 class="task-list__header">Todo</h3>
+      <ul id="incomplete-tasks" class="task-list">
       <li class="task-list__item">
         <input type="checkbox input">
         <label class="task label">Pay Bills</label>
@@ -36,9 +39,11 @@
         <button class="btn edit">Save</button>
         <button class="btn delete"><img src="./remove.svg" alt="remove-button" class="btn-image"></button>
       </li>
-    </ul>
-    <h3 class="task-list__header">Completed</h3>
-    <ul id="completed-tasks" class="task-list">
+      </ul>
+    </section>
+    <section class="complete-task"></section>
+      <h3 class="task-list__header">Completed</h3>
+      <ul id="completed-tasks" class="task-list">
       <li class="task-list__item">
         <input type="checkbox input" checked>
         <label class="task label">See the Doctor</label>
@@ -46,8 +51,9 @@
         <button class="btn edit">Edit</button>
         <button class="btn delete"><img src="./remove.svg " alt="remove-button" class="btn-image"></button>
       </li>
-    </ul>
-  </div>
+      </ul>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 
